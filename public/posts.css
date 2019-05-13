@@ -1,0 +1,17 @@
+body {
+  background-color: #9c0be5;
+}
+h1 {
+  text-align: center;
+  text-decoration-color: white;
+}
+p {
+  font-family: times;
+  font-size: 20px;
+}
+#upvote{
+  color:green
+}
+#downvote{
+  color:red
+}

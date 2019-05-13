@@ -1,0 +1,8 @@
+extends layout.pug
+block content
+  div
+    header <u>All Posts</u>
+  each p in posts
+    p title: #{p.title} | type: #{p.Type} | content: #{p.content} | category: #{p.category}
+    button(onclick='console.log('like')') upvote
+    button(onclick='console.log('unlike')') downvote

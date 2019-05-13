@@ -1,0 +1,5 @@
+p (id=p_.id)Title: #{p.title}| Content: #{p.content}| Category: #{p.category}
+  span()
+if user
+  button(class='button' id='upvote' data-id=p._id style='display: inline;')upvote
+  button(class='button' id='downvote' data-id=p._id style='display: inline;')downvote

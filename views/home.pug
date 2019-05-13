@@ -1,0 +1,31 @@
+extends layout.pug
+block content
+  center
+  div
+    h1 <u>Welcome to Crusader News!</u>
+  div
+    form(method='POST' action='/new-post')
+      div
+        label(for='title') Title: 
+        input(type='text' name='title')
+      div
+        label(for='category') Type: 
+        select(name='category')
+          option(value='text') Text
+          option(value='url') URL
+          option(value='image') Image
+          option(value='video') Video
+      div
+        label(for='content') Content: 
+        textarea(name='content') 
+      div
+        label(for='category') Category: 
+        textarea(name='Category') 
+      button(type='submit') Post
+    div
+      button(id='') Touch Me!
+      div(style='display:none')
+        p Some text here
+        img(src='')
+    div
+      footer <b>Thank you for posting!</b>
